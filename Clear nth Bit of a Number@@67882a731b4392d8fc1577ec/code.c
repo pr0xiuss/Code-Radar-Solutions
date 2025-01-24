@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int bit(int num, int pos){
-    return num &~(1<<pos);
+    return num & ~(1<<pos);
 }
 int main() {
     int num,pos,res;
