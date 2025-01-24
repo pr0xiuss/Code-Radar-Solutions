@@ -1,8 +1,11 @@
 #include <stdio.h>
 
 int bit(int num, int pos){
-    int mask=~(1<<pos);
-    return num & mask;
+    if (pos<0 || pos>=32){
+        return num;
+    }else{
+        return num & ~(1<<pos);
+    }
 }
 int main() {
     int num,pos,res;
