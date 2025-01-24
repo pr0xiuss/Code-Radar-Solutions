@@ -2,7 +2,7 @@
 
 int getl(int num){
     if (num==0){
-        return -1
+        return -1;
     }
     int pos=0;
     while ((num&1)==0){
