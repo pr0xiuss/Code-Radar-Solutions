@@ -7,7 +7,7 @@ unsigned int tog(unsigned int num,int pos){
 int main() {
     unsigned int num
     int pos;
-    scanf("%d %d",&num,&pos);
+    scanf("%u %d",&num,&pos);
     unsigned int res=tog(num,pos);
     printf("%d",res);
     return 0;
