@@ -3,8 +3,8 @@
 int main() {
     int x,y,z;
     float av;
-    scanf("%d",&x,&y,&z);
+    scanf("%d %d %d",&x,&y,&z);
     av=(x+y+z)/3.0;
-    printf("Average: %f",av);
+    printf("Average: %.2f",av);
     return 0;
 }
