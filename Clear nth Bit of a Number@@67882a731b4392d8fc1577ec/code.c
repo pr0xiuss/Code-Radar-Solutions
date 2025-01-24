@@ -2,7 +2,7 @@
 
 int bit(int num, int pos){
     int mask=~(1<<pos);
-    return num & mask
+    return num & mask;
 }
 int main() {
     int num,pos,res;
