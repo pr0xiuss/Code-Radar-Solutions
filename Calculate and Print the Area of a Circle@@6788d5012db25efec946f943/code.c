@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    inr r;
+    int r;
     float ar,pi=3.14;
     scanf("%d",&r);
     ar=pi*r*r;
