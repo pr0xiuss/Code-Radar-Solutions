@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <limits.h>
 
+unsigned int bitt(unsigned int num,int pos){
+    unsigned int mask=1<<pos;
+    if (num & mask){
+        num^=mask;
+    }return num;
+}
 int main() {
-    int num,pos;
-    if (pos<0 || pos>=sizeof(int)*8){
-        return 1;
-    }
-    int mask=~(1<<pos);
-    num=num&mask;
-    printf("%d",num);
+    unsigned int num,pos,res;
+    scanf("%d %d",&num,&pos);
+    res=bitt(num,pos);
+    printf("%d",res);
     return 0;
 }
