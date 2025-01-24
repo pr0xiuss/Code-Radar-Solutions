@@ -13,7 +13,7 @@ int getl(int num){
 }
 int main() {
     int num;
-    scanf("%d",%num);
+    scanf("%d",&num);
     int pos=getl(num);
     printf("%d",pos);
     return 0;
