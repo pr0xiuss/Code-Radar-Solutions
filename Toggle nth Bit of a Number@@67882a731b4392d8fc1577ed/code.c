@@ -9,6 +9,6 @@ int main() {
     int pos;
     scanf("%u %d",&num,&pos);
     unsigned int res=tog(num,pos);
-    printf("%d",res);
+    printf("%u",res);
     return 0;
 }
