@@ -1,19 +1,13 @@
 #include <stdio.h>
 
-void dtob(int num){
-    int binary[32];
-    int i=0;
-    while (num>0){
-        binary[i++]=num&1;
-        num=num>>1;
-    }
-    for (int j=i-1;j>=0;j--){
-        printf("%d",binary[j]);
-    }
-}
 int main() {
-    int num;
+    int num,binary=0,place=1;
     scanf("%d",&num);
-    dtob(num);
+    while (num>0){
+        binary+=(num&1)*place;
+        num=num>>1;
+        place*=10;
+    }
+    printf("5d",binary);
     return 0;
 }
