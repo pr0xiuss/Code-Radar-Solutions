@@ -1,15 +1,14 @@
 #include <stdio.h>
+#include <limits.h>
 
-int bit(int num, int pos){
-    if (pos<0 || pos>=32){
-        return num;
-    }else{
-        return num & ~(1<<pos);
-    }
-}
 int main() {
-    int num,pos,res;
+    int num,pos;
     res=bit(num,pos);
-    printf("%d",res);
+    if (pos<0 || pos>=sizeof(int)*8){
+        return 1
+    }
+    int mask=~(1<<pos);
+    num=num&mask;
+    printf("%d",num);
     return 0;
 }
