@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 
 unsigned int bitt(unsigned int num,int pos){
     unsigned int mask=1<<pos;
