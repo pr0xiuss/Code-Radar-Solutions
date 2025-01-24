@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     int x,y,z;
     float av;
     scanf("%d %d %d",&x,&y,&z);
