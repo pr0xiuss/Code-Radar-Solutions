@@ -12,7 +12,7 @@ int main(){
             printf("%ld",x-y);
             break;
         case '*':
-            printf("ld",x*y);
+            printf("%ld",x*y);
             break;
         case '/':
             if (y==0){
