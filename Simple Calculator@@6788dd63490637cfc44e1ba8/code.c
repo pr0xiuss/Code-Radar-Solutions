@@ -18,7 +18,7 @@ int main() {
             printf("%d",x/y);
             break;
         default:
-            printf("erro");
+            printf("error");
             break;
     }
     return 0;
