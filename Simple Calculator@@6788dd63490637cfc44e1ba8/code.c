@@ -16,13 +16,13 @@ int main(){
             break;
         case '/':
             if (y==0){
-                printf("Error");
+                printf("error");
             }else{
                 printf("%ld",x/y);
             }
             break;
         default:
-            printf("Error");
+            printf("error");
             break;
     }
     return 0;
