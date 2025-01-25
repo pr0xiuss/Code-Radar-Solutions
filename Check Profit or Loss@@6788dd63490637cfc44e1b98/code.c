@@ -4,7 +4,7 @@ int main() {
     int x,y,p,l;
     scanf("%d %d",&x,&y);
     p=sp-cp;
-    l=cp-sp
+    l=cp-sp;
     if (sp>0){
         printf("Profit");
     }else if(cp>0){
