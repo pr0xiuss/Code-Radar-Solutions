@@ -3,19 +3,19 @@
 int main() {
     double x,y;
     char op;
-    scanf("%lf %lf %c",&x,&y,&op);
+    scanf("%d %d %c",&x,&y,&op);
     switch (op){
         case '+':
-            printf("%lf.",x+y);
+            printf("%d",x+y);
             break;
         case '-':
-            printf("%.2lf",x-y);
+            printf("%d",x-y);
             break;
         case '*':
-            printf("%.2lf",x*y);
+            printf("%d",x*y);
             break;
         case '/':
-            printf("%.2lf",x/y);
+            printf("%d",x/y);
             break;
         default:
             printf("error");
