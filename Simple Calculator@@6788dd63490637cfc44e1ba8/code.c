@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int x,y;
+    double int x,y;
     char op;
     scanf("%d %d %c",&x,&y,&op);
     switch (op){
