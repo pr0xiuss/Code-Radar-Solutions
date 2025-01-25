@@ -3,11 +3,11 @@
 int main() {
     int x,y,p,l;
     scanf("%d %d",&x,&y);
-    p=sp-cp;
-    l=cp-sp;
-    if (sp>0){
+    p=x-y;
+    l=y-x;
+    if (p>0){
         printf("Profit");
-    }else if(cp>0){
+    }else if(l>0){
         printf("Loss");
     }else{
         printf("No Profit No Loss");
