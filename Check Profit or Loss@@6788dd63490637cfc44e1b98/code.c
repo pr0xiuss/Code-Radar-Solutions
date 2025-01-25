@@ -2,7 +2,7 @@
 
 int main() {
     int cp,sl,p,l;
-    scanf("%d %d",&y,&x);
+    scanf("%d %d",&cp,&sp);
     p=sp-cp;
     l=cp-sp;
     if (p>0){
