@@ -15,14 +15,14 @@ int main(){
             printf("ld",x*y);
             break;
         case '/':
-            if (y==0||x==0){
-                printf("error");
+            if (y==0){
+                printf("Error");
             }else{
                 printf("%ld",x/y);
             }
             break;
         default:
-            printf("error");
+            printf("Error");
             break;
     }
     return 0;
