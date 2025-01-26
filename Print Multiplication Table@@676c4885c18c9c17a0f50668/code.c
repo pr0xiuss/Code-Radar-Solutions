@@ -5,7 +5,7 @@ int main() {
     scanf("%d",&num);
     int (i=1;i<=10;i++){
         p=num*i;
-        printf("%d x %d = %d",num,i,p);
+        printf("%d x %d = %d\n",num,i,p);
     }
     return 0;
 }
