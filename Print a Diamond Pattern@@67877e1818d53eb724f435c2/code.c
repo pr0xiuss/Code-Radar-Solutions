@@ -11,7 +11,7 @@ void ptn(int num){
         }
         printf("\n");
     }
-    for (int=num-1;i>=1;i--){
+    for (i=num-1;i>=1;i--){
         for (j=num;j>i;j--){
             printf(" ");
         }
