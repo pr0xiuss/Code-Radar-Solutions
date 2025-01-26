@@ -4,11 +4,11 @@ int main() {
     int num,s;
     scanf("%d",&num);
     for (int i=1;i<=num;i++){
-        for (s=1;s<=num=-i;s++){
+        for (s=1;s<=num-i;s++){
             printf(" ");
         }
-        for (num=1;num<=i;num++){
-            printf("%d ",num);
+        for (int j=1;j<=i;j++){
+            printf("%d ",j);
         }
         printf("\n");
     }
