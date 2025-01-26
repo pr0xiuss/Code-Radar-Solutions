@@ -3,8 +3,12 @@
 int main() {
     int num;
     scanf("%d",&num);
-    for (int i=1;i<=num;i++){
-        printf("%d",i);
+    if (num==1){
+        printf("1");
+    }else{
+        for (int i=1;i<=num;i++){
+            printf("%d",i);
+            }
     }
     return 0;
 }
