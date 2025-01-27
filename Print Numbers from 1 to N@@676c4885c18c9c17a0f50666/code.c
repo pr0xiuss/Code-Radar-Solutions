@@ -6,4 +6,5 @@ int main() {
     for (i=1;i<=num;i++){
         prinf("%d ",i);
     }
+    return 0;
 }
