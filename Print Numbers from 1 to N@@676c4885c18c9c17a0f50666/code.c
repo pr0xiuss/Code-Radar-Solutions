@@ -3,5 +3,7 @@
 int main() {
     int num,i;
     scanf("%d",&num);
-    printf("            ");
+    for (i=1;i<=num;i++){
+        prinf("%d ",i);
+    }
 }
