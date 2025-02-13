@@ -12,16 +12,9 @@ void bubble(int arr[],int n){
     }
 }
 
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
+void printarray(int arr[n],int n){
     for (int i=0;i<n;i++){
-        scanf("%d ",&arr[i]);
-    }
-    bubble(arr,n);
-    for (int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 }
