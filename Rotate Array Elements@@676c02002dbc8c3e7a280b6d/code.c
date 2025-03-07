@@ -14,6 +14,11 @@ void rotate_array(int arr[], int n, int k) {
 int main() {
     int n, k;
     scanf("%d", &n);
+    #define MAX_SIZE 1000
+    int arr[MAX_SIZE];
+    if (n > MAX_SIZE) {
+        return 1;
+    }
     
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
