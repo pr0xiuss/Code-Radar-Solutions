@@ -9,15 +9,3 @@ int fibonacciSeries(int n){
     }
 }
 
-int main(){
-    int n;
-    scanf("%d",&num);
-    if(n<=0){
-        printf("Invalid input\n");
-        return 0;
-    }
-    for (int i=0;<i<n;i++){
-        printf("%d ",fibonacciSeries(i));
-    }
-    return 0;
-}
