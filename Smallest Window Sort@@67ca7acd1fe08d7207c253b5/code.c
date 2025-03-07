@@ -14,4 +14,22 @@ int findUnsoretedSubarray(int arr[],int n){
             break;
         }
     }
+    int minval=arr[start],maxval=arr[start];
+    for (int i=start;i<=end;i++){
+        if (arr[i]<minval) minval=arr[i];
+        if (arr[i]>maxval) maxval=arr[i];
+    }
+    for (int i=0;i<start;i++){
+        if(arr[i]>minval){
+            start=i;
+            break;
+        }
+    }
+    for(int i=n-1;i>end;i--){
+        if (arr[i]<maxval){
+            end=i;
+            break;
+        }
+    }
+    return end-start+1;
 }
