@@ -15,7 +15,6 @@ int main() {
     int n, k;
     
     // Read the size of the array
-    printf("Enter the size of the array: ");
     scanf("%d", &n);
     
     // Define a fixed-size array with a maximum size
