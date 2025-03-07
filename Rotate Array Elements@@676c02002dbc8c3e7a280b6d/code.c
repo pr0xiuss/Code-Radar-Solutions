@@ -24,25 +24,22 @@ int main() {
     
     // Ensure n does not exceed MAX_SIZE
     if (n > MAX_SIZE) {
-        printf("Array size exceeds maximum allowed size (%d)\n", MAX_SIZE);
         return 1;
     }
     
     // Read the array elements from n lines of input
-    printf("Enter the elements of the array (one per line):\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     
     // Read the number of steps to rotate
-    printf("Enter the number of steps to rotate: ");
+
     scanf("%d", &k);
     
     // Rotate the array
     rotate_array(arr, n, k);
     
     // Print the rotated array
-    printf("Rotated array: ");
     for (int i = 0; i < n; i++) {
         printf("%d\n", arr[i]);
     }
