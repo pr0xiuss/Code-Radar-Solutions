@@ -2,9 +2,9 @@ int fibonacciSeries(int n) {
     if (n==0) return 0;
     if (n==1) return 1;
     else{
-        fib=fibonacciSeries(n-1)+fibonacciSeries(n-2);
+        int fib=fibonacciSeries(n-1)+fibonacciSeries(n-2);
         for (int i=0;i<n;i++){
-            return fibonacciSeries(i);
+            return fib(i);
         }
 
     }
