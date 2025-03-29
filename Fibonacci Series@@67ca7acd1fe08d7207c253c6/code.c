@@ -3,7 +3,7 @@ int fibonacciSeries(int n) {
     if (n==1) return 1;
     else{
         for (int i=0;i<n;i++){
-            printf(fibonacciSeries(i));
+            printf("%d ",fibonacciSeries(i));
         }
 
     }
