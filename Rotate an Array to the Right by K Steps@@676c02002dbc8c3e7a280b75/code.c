@@ -17,7 +17,7 @@ int main(){
         arr[0]=last;
     }
     for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d ",arr[i]);
     }
     return 0;
 
