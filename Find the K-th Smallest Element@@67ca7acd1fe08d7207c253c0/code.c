@@ -13,6 +13,9 @@ void bubble(int arr[],int n){
 }
 int kthSmallest(int arr[],int n,int k){
     bubble(arr,n);
+    if (k>n){
+        return -1;
+    }
     return arr[k-1];
     return 0;
 }
