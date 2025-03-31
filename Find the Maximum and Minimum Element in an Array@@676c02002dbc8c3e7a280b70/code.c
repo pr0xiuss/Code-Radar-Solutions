@@ -6,17 +6,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    for (int i=0;i<n;i++){
-        maxn=arr[i];
-        minn=arr[i];
-        for (int j=i;j<n;j++){
-            if(arr[j]>maxn){
-                maxn=arr[j];
-            }
-            if (arr[j]<minn){
-                minn=arr[j];
-            }
-        }
+    maxn=arr[0];
+    minn=arr[0]
+    for(int i=0<i<n;i++){
+        if(arr[i]>maxn) maxn=arr[i];
+        ef (arr[i]<minn) minn=arr[i];
     }
     printf("%d %d",minn,maxn);
     return 0;
