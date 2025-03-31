@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int compare(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
+    return (*(int*)b - *(int*)a);
 }
 int main(){
     int n;
@@ -15,6 +15,14 @@ int main(){
         return 0;
     }
     qsort(arr,n,sizeof(int),compare);
-    printf("%d",arr[n-2]);
+    int first=arr[0];
+    int res=-1;
+    for (int i=0;i<n;i++){
+        if (arr[i]<first){
+            res=arr[i];
+            break;
+        }
+    }
+    printf("%d",res);
     return 0;
 }
