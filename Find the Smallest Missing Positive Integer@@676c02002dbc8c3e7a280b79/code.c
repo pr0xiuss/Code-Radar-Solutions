@@ -13,7 +13,7 @@ int main(){
     }
     qsort(arr,n,sizeof(int),compare);
     int miss=1;
-    for(int i=;i<n;i++){
+    for(int i=0;i<n;i++){
         if (arr[i]==miss){
             miss++;
         }
