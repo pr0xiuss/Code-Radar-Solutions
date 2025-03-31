@@ -9,7 +9,7 @@ int main() {
         freq[arr[i]]++; 
     }
     int el=0,c;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < 100; i++) {
         if (freq[i]>el){
             el=freq[i];
             c=i;
