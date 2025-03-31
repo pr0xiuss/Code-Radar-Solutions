@@ -11,6 +11,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     qsort(arr,n,sizeof(int),compare);
-    printf("%d",arr[n-1]);
+    printf("%d",arr[n-2]);
     return 0;
 }
