@@ -8,7 +8,10 @@ int main(){
     }
     scanf("%d",&target);
     for(int i=0;i<n;i++){
-        if(arr[i]==target) printf("%d",i);
+        if(arr[i]==target){
+            printf("%d",i);
+            return 0;
+        }
         else printf("-1");
     }
     return 0;
