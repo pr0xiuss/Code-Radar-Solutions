@@ -12,6 +12,6 @@ int main(){
     }
     int len=sizeof(arr)/sizeof(arr[0]);
     qsort(arr,len,sizeof(int),compare);
-    printf("%d",arr[n-2]);
+    printf("%d",arr[len-2]);
     return 0;
 }
