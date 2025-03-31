@@ -8,7 +8,7 @@ int main(){
     }
     maxn=arr[0];
     minn=arr[0];
-    for(int i=0<i<n;i++){
+    for(int i=0;i<n;i++){
         if(arr[i]>maxn) maxn=arr[i];
         if (arr[i]<minn) minn=arr[i];
     }
