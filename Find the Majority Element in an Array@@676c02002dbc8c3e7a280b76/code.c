@@ -8,14 +8,14 @@ int main() {
         scanf("%d", &arr[i]);
         freq[arr[i]]++; 
     }
-    int el=0,c;
+    int el=-1,maxf=0;
     for (int i = 0; i < 100; i++) {
-        if (freq[i]>el){
-            el=freq[i];
-            c=i;
+        if (freq[i]>maxf){
+            maxf=freq[i];
+            el=i;
         }
     }
-    if(c>n/2) printf("%d",c);
+    if(maxf>n/2) printf("%d",c);
     else printf("-1");
     return 0;
 }
