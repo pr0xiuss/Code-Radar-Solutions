@@ -12,7 +12,7 @@ int main(){
     }
 
     int first=arr[0];
-    int res=-1;
+    int res=-100;
     for (int i=0;i<n;i++){
         if (arr[i]>first){
             first=arr[i];
