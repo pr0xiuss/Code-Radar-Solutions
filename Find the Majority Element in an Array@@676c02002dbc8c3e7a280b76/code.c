@@ -13,9 +13,9 @@ int main() {
         if (freq[i]>el){
             el=freq[i];
             c=i;
-            if(c>n/2) printf("%d",c);
-            else printf("-1");
         }
+        if(c>n/2) printf("%d",c);
+            else printf("-1");
     }
     return 0;
 }
