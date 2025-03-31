@@ -10,8 +10,7 @@ int main(){
     for (int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int len=sizeof(arr)/sizeof(arr[0]);
     qsort(arr,n,sizeof(int),compare);
-    printf("%d",arr[n-2]);
+    printf("%d",arr[n-1]);
     return 0;
 }
