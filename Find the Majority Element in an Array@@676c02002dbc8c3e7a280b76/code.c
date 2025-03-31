@@ -15,7 +15,7 @@ int main() {
             el=i;
         }
     }
-    if(maxf>n/2) printf("%d",c);
+    if(maxf>n/2) printf("%d",el);
     else printf("-1");
     return 0;
 }
