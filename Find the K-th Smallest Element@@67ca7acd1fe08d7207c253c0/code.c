@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 void bubble(int arr[],int n){
     for (int i=0;i<n-1;i++){
@@ -12,15 +11,8 @@ void bubble(int arr[],int n){
         }
     }
 }
-int main(){
-    int n,k;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-    }
-    scanf("%d",&k);
+int kthSmallest(int arr[],int n,int k){
     bubble(arr,n);
-    printf("%d",arr[k]);
+    return arr[k];
     return 0;
 }
