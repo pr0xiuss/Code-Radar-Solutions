@@ -1,5 +1,5 @@
 int mostPlayedGame(int games[],int n){
-    int hash[100];
+    int hash[100]={0};
     for(int i=0;i<n;i++){
         hash[games[i]]++;
     }
