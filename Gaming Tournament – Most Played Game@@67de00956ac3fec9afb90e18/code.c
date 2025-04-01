@@ -10,6 +10,6 @@ int mostPlayedGame(int games[],int n){
             el=i;
         }
     }
-    return maxf;
+    return el;
     return 0;
 }
