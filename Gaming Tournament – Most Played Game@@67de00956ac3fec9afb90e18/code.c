@@ -3,7 +3,7 @@ int mostPlayedGame(int games[],int n){
     for(int i=0;i<n;i++){
         hash[games[i]]++;
     }
-    int el=-1,maxf=0;
+    int el=games[0],maxf=0;
     for(int i=0;i<100;i++){
         if (hash[i]>maxf){
             maxf=hash[i];
