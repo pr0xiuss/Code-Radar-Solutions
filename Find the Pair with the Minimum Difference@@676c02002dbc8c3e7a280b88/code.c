@@ -11,7 +11,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     qsort(arr,n,sizeof(int),compare);
-    int min=abs(arr[1]-arr[0])
+    int min=abs(arr[1]-arr[0]);
     int a=arr[0],b=arr[1];
     for(int i=1;i<n-1;i++){
         int diff=abs(arr[i+1]-arr[i]);
