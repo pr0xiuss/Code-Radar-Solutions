@@ -10,6 +10,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n<2){
+        printf("-1");
+        return 0;
+    }
     qsort(arr,n,sizeof(int),compare);
     int min=abs(arr[1]-arr[0]);
     int a=arr[0],b=arr[1];
