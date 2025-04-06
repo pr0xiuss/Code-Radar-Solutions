@@ -14,7 +14,7 @@ int main(){
             temp[l++]=max;
         }
     }
-    for(int i=n-1;i>0;i--){
+    for(int i=l-1;i>0;i--){
         printf("%d ",temp[i]);
     }
     return 0;
