@@ -15,7 +15,7 @@ int main(){
         }
     }
     for(int i=l-1;i>=0;i--){
-        printf("%d ",temp[i])
+        printf("%d ",temp[i]);
     }
     return 0;
 }
