@@ -8,7 +8,7 @@ int main(){
     }
     if(n%2!=0) mid=arr[n/2];
     else{
-        mid=(arr[n/2]+arr[(n/2)+1])/2;
+        mid=(arr[n/2 -1]+arr[n/2])/2;
     }
     printf("%d",mid);
     return 0;
