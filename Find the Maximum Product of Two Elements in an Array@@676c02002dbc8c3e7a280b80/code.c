@@ -3,21 +3,25 @@
 int compare(const void *a,const void *b){
     return(*(int *)a-*(int *)b);
 }
-int nums(int arr[],int n){
-    qsort(arr,n,sizeof(int),compare);
-    int max1=arr[n-1],max2=arr[n-2];
-    int p=max1*max2;
-    printf("%d",p);
-}
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n],temp[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-        int x=abs(arr[i]);
-        temp[i]=x;
+        temp[i]=abs(arr[i]);
     }
-    nums(temp,n);
+    qsort(temp,n,sizeof(int),compare);
+    int max1=temp[n-1];
+    int i=n-2;
+    while(i>=0 && temp[i]==max1){
+        i--;
+    }
+    if(i>=0){
+        int max2=temp[i];
+        printf("%d",max1*max2);
+    }else{
+        printf("%d",max1);
+    }
     return 0;
 }
