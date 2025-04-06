@@ -4,7 +4,7 @@ int pal(int n){
     og=n;
     while (n>0){
         rem=n%10;
-        rev*=10+rem;
+        rev=rev*10+rem;
         n/=10;
     }
     if(og==n) return 1;
