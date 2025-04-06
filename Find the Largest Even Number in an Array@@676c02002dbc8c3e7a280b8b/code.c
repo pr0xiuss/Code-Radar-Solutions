@@ -13,6 +13,6 @@ int main(){
     for(int i=0;i<e;i++){
         if(even[i]>max) max=even[i];
     }
-    printf("%d",even[i]);
+    printf("%d",max);
     return 0;
 }
