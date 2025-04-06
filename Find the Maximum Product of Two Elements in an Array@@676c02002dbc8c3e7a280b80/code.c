@@ -3,7 +3,7 @@
 int compare(const void *a,const void *b){
     return(*(int *)a-*(int *)b);
 }
-int nums(int arr[]){
+int nums(int arr[],int n){
     int n=sizeof(arr)/sizeof(arr[0]);
     qsort(arr,n,sizeof(int),compare);
     int max1=arr[n-1],max2=arr[n-2];
@@ -19,6 +19,6 @@ int main(){
         int x=abs(arr[i]);
         temp[i]=x;
     }
-    nums(temp[n]);
+    nums(temp,n);
     return 0;
 }
