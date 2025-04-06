@@ -7,7 +7,7 @@ int pal(int n){
         rev=rev*10+rem;
         n/=10;
     }
-    if(og==n) return 1;
+    if(og==rev) return 1;
     else return 0;
 }
 int main(){
