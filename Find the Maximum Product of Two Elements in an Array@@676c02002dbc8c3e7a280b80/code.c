@@ -17,7 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
         int x=abs(arr[i]);
-        temp[1]=x;
+        temp[i]=x;
     }
     nums(temp[n]);
     return 0;
