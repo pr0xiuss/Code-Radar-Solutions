@@ -8,7 +8,7 @@ int pal(int n){
         n/=10;
     }
     if(og==n) return 1;
-    else return 0l
+    else return 0;
 }
 int main(){
     int n,c=0;
