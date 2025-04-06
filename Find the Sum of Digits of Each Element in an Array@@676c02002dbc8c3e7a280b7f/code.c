@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-int sum(int n){
+int sum(int x){
     int s=0;x=abs(n)
     
     while(x!=0){
