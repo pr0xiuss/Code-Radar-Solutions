@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int sum(int x){
-    int s=0;x=abs(n)
+    int s=0,x=abs(n);
     
     while(x!=0){
         s+=x%10;
