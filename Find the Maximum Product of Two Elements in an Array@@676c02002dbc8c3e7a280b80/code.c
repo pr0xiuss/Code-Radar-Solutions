@@ -7,7 +7,7 @@ int nums(int arr[]){
     int n=sizeof(arr)/sizeof(arr[0]);
     qsort(arr,n,sizeof(int),compare);
     int max1=arr[n-1],max2=arr[n-2];
-    int p=max1*max2
+    int p=max1*max2;
     printf("%d",p);
 }
 int main(){
