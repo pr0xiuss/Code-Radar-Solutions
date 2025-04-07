@@ -4,7 +4,7 @@ int printPrimesInRange(int a,int b){
         for(int j=2;j*j<=i;j++){
             if(i%j==0) return 0;
         }
-        printf("%d ",j);
+        printf("%d ",i);
     }
     return 0;
 }
